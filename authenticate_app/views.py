@@ -7,7 +7,8 @@ from random import randint as RI
 
 def display_all_threads(request):
     threads = thread.objects.order_by('datetime')
-    all_threads = {'threads': threads}
+    all_threads = {'threads': threads,
+                    'title' : "All Threads"}
     return render(request, 'index.html', all_threads)
 
 
@@ -37,7 +38,8 @@ def view_thread(request, id):
 def createthread(request):
     all_threads = thread.objects.order_by('datetime')
     threaddict = {
-                    "all_threads" : all_threads
+                    "all_threads" : all_threads,
+                    "title"       : "Create Thread"
                 }
 
     if request.method == "POST":
