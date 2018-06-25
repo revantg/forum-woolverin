@@ -1,0 +1,40 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALLOWED_HOSTS	../project/settings.py	/^ALLOWED_HOSTS = []$/;"	kind:variable	line:29
+AUTH_PASSWORD_VALIDATORS	../project/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:89
+AuthenticateAppConfig	../authenticate_app/apps.py	/^class AuthenticateAppConfig(AppConfig):$/;"	kind:class	line:4
+BASE_DIR	../project/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:16
+DATABASES	../project/settings.py	/^DATABASES = {$/;"	kind:variable	line:78
+DEBUG	../project/settings.py	/^DEBUG = True$/;"	kind:variable	line:27
+INSTALLED_APPS	../project/settings.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:34
+LANGUAGE_CODE	../project/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:108
+MIDDLEWARE	../project/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:44
+ROOT_URLCONF	../project/settings.py	/^ROOT_URLCONF = 'project.urls'$/;"	kind:variable	line:54
+SECRET_KEY	../project/settings.py	/^SECRET_KEY = 's)gz%-0o(hxg9bed+90dxo-&$2auoyzpoa=soup3t&*ictqao='$/;"	kind:variable	line:24
+STATIC_URL	../project/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:122
+TEMPLATES	../project/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:56
+TEMPLATE_DIR	../project/settings.py	/^TEMPLATE_DIR = os.path.join(BASE_DIR, 'template')$/;"	kind:variable	line:17
+TIME_ZONE	../project/settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:110
+USE_I18N	../project/settings.py	/^USE_I18N = True$/;"	kind:variable	line:112
+USE_L10N	../project/settings.py	/^USE_L10N = True$/;"	kind:variable	line:114
+USE_TZ	../project/settings.py	/^USE_TZ = True$/;"	kind:variable	line:116
+WSGI_APPLICATION	../project/settings.py	/^WSGI_APPLICATION = 'project.wsgi.application'$/;"	kind:variable	line:72
+__init__.py	../authenticate_app/__init__.py	1;"	kind:file	line:1
+__init__.py	../authenticate_app/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	../project/__init__.py	1;"	kind:file	line:1
+admin.py	../authenticate_app/admin.py	1;"	kind:file	line:1
+application	../project/wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:16
+apps.py	../authenticate_app/apps.py	1;"	kind:file	line:1
+manage.py	../manage.py	1;"	kind:file	line:1
+models.py	../authenticate_app/models.py	1;"	kind:file	line:1
+name	../authenticate_app/apps.py	/^    name = 'authenticate_app'$/;"	kind:variable	line:5
+settings.py	../project/settings.py	1;"	kind:file	line:1
+tests.py	../authenticate_app/tests.py	1;"	kind:file	line:1
+urlpatterns	../project/urls.py	/^urlpatterns = [$/;"	kind:variable	line:19
+urls.py	../project/urls.py	1;"	kind:file	line:1
+views.py	../authenticate_app/views.py	1;"	kind:file	line:1
+wsgi.py	../project/wsgi.py	1;"	kind:file	line:1
