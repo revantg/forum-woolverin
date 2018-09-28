@@ -30,21 +30,22 @@
                                         <p> {{ thread_data.post_body }}</p>
                                     </div>
                                     <div class="clearfix"></div>
-                                </div>                              
+                                </div>
                                 <div class="postinfobot">
 
                                     <div class="likeblock pull-left">
-                                        <a href="#" class="up"><i class="fa fa-thumbs-o-up"></i>{{thread_data.likes}}</a>
-                                        <a href="#" class="down"><i class="fa fa-thumbs-o-down"></i>{{thread_data.dislikes}}</a>
+                                        <a href="{% url 'upthread' thread_data.id %}" class="up"><i class="fa fa-thumbs-o-up"></i>{{thread_data.likes}}</a>
+                                        <a href="{% url 'downthread' thread_data.id %}" class="down">
+                                            <i class="fa fa-thumbs-o-down"></i>{{thread_data.dislikes}}</a>
                                     </div>
 
-                                    <div class="prev pull-left">                                        
+                                    <div class="prev pull-left">
                                         <a href="#"><i class="fa fa-reply"></i></a>
                                     </div>
 
                                     <div class="posted pull-left"><i class="fa fa-clock-o"></i> Posted on : {{ thread_data.datetime }}</div>
 
-                                    <div class="next pull-right">                                        
+                                    <div class="next pull-right">
                                         <a href="#"><i class="fa fa-share"></i></a>
 
                                         <a href="#"><i class="fa fa-flag"></i></a>
@@ -92,21 +93,21 @@
                                         <p align = "right"></b>{{ reply.user_name }}</p>
                                     </div>
                                     <div class="clearfix"></div>
-                                </div>                              
+                                </div>
                                 <div class="postinfobot">
 
                                     <div class="likeblock pull-left">
-                                        <a href="#" class="up"><i class="fa fa-thumbs-o-up"></i>{{ reply.likes }}</a>
-                                        <a href="#" class="down"><i class="fa fa-thumbs-o-down"></i>{{ reply.dislikes }}</a>
+                                        <a href="{% url 'upreply' reply.id %}" class="up"><i class="fa fa-thumbs-o-up"></i>{{ reply.likes }}</a>
+                                        <a href="{% url 'downreply' reply.id %}" class="down"><i class="fa fa-thumbs-o-down"></i>{{ reply.dislikes }}</a>
                                     </div>
 
-                                    <div class="prev pull-left">                                        
+                                    <div class="prev pull-left">
                                         <a href="#"><i class="fa fa-reply"></i></a>
                                     </div>
 
                                     <div class="posted pull-left"><i class="fa fa-clock-o"></i> Posted on : {{ reply.date_field }}</div>
 
-                                    <div class="next pull-right">                                        
+                                    <div class="next pull-right">
                                         <a href="#"><i class="fa fa-share"></i></a>
 
                                         <a href="#"><i class="fa fa-flag"></i></a>
@@ -148,10 +149,10 @@
 
                                                 </div>
                                             </div>
-                                            
+
                                         </div>
                                         <div class="clearfix"></div>
-                                    </div>                              
+                                    </div>
                                     <div class="postinfobot">
 
                                         <div class="notechbox pull-left">

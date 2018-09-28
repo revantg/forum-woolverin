@@ -4,7 +4,7 @@
 {% load static %}
 
 <! -------------------                        Main Content for threads                        --------------------->
-    
+
                 <section class="content">
                     <div class="container">
                         <div class="row">
@@ -74,11 +74,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-md-8">
-                            
-                            
+
+
                             <!-- POST -->
-                            {% for i in threads %}
-                                {{ i.user_name }}
+                            {% for i in data %}
+                                {{ i.thread_data.user_name }}
                             <div class="post">
                                 <div class="wrap-ut pull-left">
                                     <div class="userinfo pull-left">
@@ -92,21 +92,21 @@
                                         </div>
                                     </div>
                                     <div class="posttext pull-left">
-                                        <h2><a href="{% url "viewthread" i.id %}"> {{ i.subject }} </a></h2>  
-                                        <p>{{ i.description }}</p>
+                                        <h2><a href="{% url "viewthread" i.thread_data.id %}"> {{ i.thread_data.subject }} </a></h2>
+                                        <p><a href="{% url "viewthread" i.thread_data.id %}"> {{ i.thread_data.description }} </a></p>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="postinfo pull-left">
                                     <div class="comments">
                                         <div class="commentbg">
-                                            20
+                                            {{ i.num_of_reply }}
                                             <div class="mark"></div>
                                         </div>
 
                                     </div>
                                     <div class="views"><i class="fa fa-eye"></i> 1,568</div>
-                                    <div class="time"><i class="fa fa-clock-o"></i> 24 min</div>                                    
+                                    <div class="time"><i class="fa fa-clock-o"></i> 24 min</div>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
